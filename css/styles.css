@@ -1,0 +1,100 @@
+body {
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #fff;
+}
+
+hr {
+    border: none;
+    height: 40px;
+    /* Set the hr color */
+    color: #FFF; /* old IE */
+    background-color: #FFF; /* Modern Browsers */
+}
+
+/* Section coloring */
+
+
+section {
+    padding: 10px 0;
+    background: #fff;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.nova {
+    color: #fff;
+    background: #1D9E74;
+}
+
+/* Header section */
+
+header {
+    text-align: center;
+    color: #fff;
+    background: #1D9E74;
+}
+
+header .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+    display: block; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 6em;
+    font-weight: 600;
+}
+
+header .intro-text .skills a {
+    font-family: 'Cabin Condensed', sans-serif;
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+header .intro-text .skills {
+    font-size: 1.5em;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-weight: 400;
+}
+
+header .icon-list ul
+{
+    list-style-type:none;
+    margin: 5px;
+    padding: 5px;
+}
+
+header .icon-list ul li
+{
+    display: inline;
+}
+
+header .icon-list ul li a
+{
+    text-decoration: none;
+    padding: .2em .4em;
+    color: #fff;
+}
