@@ -4,7 +4,7 @@ body {
 
 p {
     font-size: 15px;
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Cabin', sans-serif;
 }
 
 a,
@@ -68,7 +68,7 @@ header .intro-text .name {
 }
 
 header .intro-text .skills a {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Cabin', sans-serif;
     text-decoration: underline;
     color: #fff;
 }
@@ -76,7 +76,7 @@ header .intro-text .skills a {
 
 header .intro-text .skills {
     font-size: 1.5em;
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-weight: 400;
 }
 

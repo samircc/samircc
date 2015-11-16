@@ -6,7 +6,7 @@
 }
 
 .ff-container label{
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Cabin', sans-serif;
 	cursor: pointer;
 	color: #1D9E74;
 	font-size: 19px;
@@ -20,7 +20,7 @@
 }
 
 .ff-container label:hover{
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Cabin', sans-serif;
 	cursor: pointer;
 	color: #234D20;
 	font-size: 19px;
