@@ -1,5 +1,5 @@
 .grid {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Cabin', sans-serif;
 	padding: 20px 20px 100px 20px;
 	width: 100%;
 	margin: 0 auto;
@@ -60,7 +60,7 @@
 }
 
 .grid figcaption span {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Cabin', sans-serif;
 	font-size: 1.2em;
 }
 
