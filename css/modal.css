@@ -62,6 +62,16 @@ perspective effects (not including the modals and the overlay).
 	transition: all 0.3s;
 }
 
+.md-overlay img {
+	float:right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	cursor: pointer;
+}
+
+
 .md-show ~ .md-overlay {
 	opacity: 1;
 	visibility: visible;
@@ -102,6 +112,12 @@ perspective effects (not including the modals and the overlay).
 	text-decoration: underline;
 }
 
+.md-content img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 .md-content > div {
 	padding: 15px 40px 30px;
 	margin: 0;
@@ -125,12 +141,10 @@ perspective effects (not including the modals and the overlay).
 }
 
 .md-content button {
-    border: 3px solid;
-    color: #FFF;
+    border: none;
 	display: inline-block;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #FFF;
 	background: none;
 }
 
