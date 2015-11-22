@@ -80,7 +80,7 @@ header .intro-text .skills {
     font-size: 1.5em;
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
-    padding-top: 25px;
+    margin-top:50px;
 }
 
 header .icon-list ul
@@ -88,7 +88,7 @@ header .icon-list ul
     list-style-type:none;
     margin: 5px;
     padding: 5px;
-    padding-top: 50px;
+    margin-top:25px;
 }
 
 header .icon-list ul li
