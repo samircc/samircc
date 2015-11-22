@@ -49,12 +49,12 @@ section.nova {
 header {
     text-align: center;
     color: #fff;
-    background: #1D9E74;
+    background-image: url("../images/background-image.png");
 }
 
 header .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 175px;
 }
 
 header img {
@@ -80,6 +80,7 @@ header .intro-text .skills {
     font-size: 1.5em;
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
+    padding-top: 25px;
 }
 
 header .icon-list ul
@@ -87,6 +88,7 @@ header .icon-list ul
     list-style-type:none;
     margin: 5px;
     padding: 5px;
+    padding-top: 50px;
 }
 
 header .icon-list ul li

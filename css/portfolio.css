@@ -8,10 +8,10 @@
 .ff-container label{
     font-family: 'Cabin', sans-serif;
 	cursor: pointer;
-	color: #1D9E74;
+	color: #292D30;
 	font-size: 19px;
 	background: #ffffff;
-	border: 3px solid #1D9E74;
+	border: 3px solid #292D30;
 	margin: 5px;
 	padding: 5px;
 	text-align:center;
@@ -22,10 +22,11 @@
 .ff-container label:hover{
     font-family: 'Cabin', sans-serif;
 	cursor: pointer;
-	color: #234D20;
+/*	color: #234D20; green */
+	color: #797B87;
 	font-size: 19px;
 	background: #ffffff;
-	border: 3px solid #234D20;
+	border: 3px solid #797B87;
 	margin: 5px;
 	padding: 5px;
 	text-align:center;

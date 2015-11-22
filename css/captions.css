@@ -27,15 +27,17 @@
 }
 
 .grid figcaption {
+
 	position: absolute;
 	top: 0;
 	left: 0;
 	padding: 20px;
 	background: #34495E;
-	color: #1D9E74;
+	color: #eee;
 }
 
 .grid figcaption h3 {
+    font-family: 'Raleway', sans-serif;
 	margin: 0;
 	padding: 0;
 	font-size: 1.8em;
@@ -50,7 +52,6 @@
 	text-align: center;
 	padding: 5px 10px;
     border: 3px solid;
-    color: #1D9E74;
 	display: inline-block;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -66,12 +67,11 @@
 .grid figcaption button {
 	float:right;
     border: 3px solid;
-    color: #1D9E74;
+    color: #eee;
 	display: inline-block;
 	text-transform: uppercase;
 	text-decoration: none;
-	background: #1D9E74;
-	color: #fff;
+	background: none;
 }
 
 /* Individual Caption Styles */
