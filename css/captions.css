@@ -5,6 +5,8 @@
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
+	position:relative;
+	background:#fff;
 }
 
 .grid li {
@@ -52,11 +54,11 @@
 	text-align: center;
 	padding: 5px 10px;
     border: 3px solid;
+    color: #eee;
 	display: inline-block;
 	text-transform: uppercase;
 	text-decoration: none;
-	background: #1D9E74;
-	color: #fff;
+	background: none;
 }
 
 .grid figcaption span {

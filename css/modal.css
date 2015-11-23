@@ -81,7 +81,8 @@ perspective effects (not including the modals and the overlay).
 .md-content {
     font-family: 'Cabin', sans-serif;
 	color: #fff;
-	background: #323232;
+/*	background: #323232;*/
+	background: none;
 	position: relative;
 	border-radius: 3px;
 	text-align:left;
@@ -95,8 +96,9 @@ perspective effects (not including the modals and the overlay).
 	text-align: center;
 	font-size: 2.2em;
 	font-weight: 300;
-	opacity: 0.8;
-	background: rgba(0,0,0,0.1);
+/*	opacity: 0.8;*/
+	background: none;
+/*	background: rgba(0,0,0,0.1);*/
 	border-radius: 3px 3px 0 0;
 }
 
@@ -116,6 +118,10 @@ perspective effects (not including the modals and the overlay).
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.md-content button {
+	display:none;
 }
 
 .md-content > div {
@@ -138,14 +144,6 @@ perspective effects (not including the modals and the overlay).
 
 .md-content > div ul li {
 	padding: 5px 0;
-}
-
-.md-content button {
-    border: none;
-	display: inline-block;
-	text-transform: uppercase;
-	text-decoration: none;
-	background: none;
 }
 
 /* Individual modal styles with animations/transitions */
