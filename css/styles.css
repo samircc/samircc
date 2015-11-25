@@ -57,7 +57,7 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top:150px;
+    padding-top:75px;
     padding-bottom:150px;
     position: fixed;
     top:0;
@@ -108,4 +108,13 @@ header .icon-list ul li a
     text-decoration: none;
     padding: .2em .4em;
     color: #fff;
+}
+
+.pcontainer {
+    background: #ffffff;
+    min-height:200px;
+    overflow:hidden;
+    margin: 0 auto;
+    text-align: center;
+    position:relative;
 }

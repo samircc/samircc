@@ -16,11 +16,11 @@
 
 	<!-- Custom CSS -->
 	<link href="css/styles.css" rel="stylesheet">
-	<link href="css/portfolio.css" rel="stylesheet">
 	<link href="css/hover.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/thumbnail-slider.css" rel="stylesheet" type="text/css" />
 	<link href="css/ninja-slider.css" rel="stylesheet" type="text/css" />
+	<link href="css/portfoliolist.css" rel="stylesheet" type="text/css" />
 
 	<!-- Custom Fonts -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -64,213 +64,224 @@
 		</div>
 	</header>
 	<section>
-
-	<div class="ff-container">
-		<div class="clr"></div>  
-		<div class="portfolio-nav">
-		<input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all" checked="checked" />
-		<label for="select-type-all" class="ff-label-type-all">All</label>
-		
-		<input id="select-type-1" name="radio-set-1" type="radio" class="ff-selector-type-1" />
-		<label for="select-type-1" class="ff-label-type-1">Design</label>
-		
-		<input id="select-type-2" name="radio-set-1" type="radio" class="ff-selector-type-2" />
-		<label for="select-type-2" class="ff-label-type-2">Code</label>
-		
-		<input id="select-type-3" name="radio-set-1" type="radio" class="ff-selector-type-3" />
-		<label for="select-type-3" class="ff-label-type-3">Art</label>
-		
-		<input id="select-type-4" name="radio-set-1" type="radio" class="ff-selector-type-4" />
-		<label for="select-type-4" class="ff-label-type-4">Film</label>
-		<div class="clr"></div>  
+	<div class = "pcontainer">
+		<div class = "portfolio-nav" data-spy="affix" data-offset-top="440" data-offset-bottom="200">
+			<ul id="filters" class="clearfix">
+				<li><span class="filter" data-filter="design code art film">All</span></li>
+				<li><span class="filter" data-filter="design">Design</span></li>
+				<li><span class="filter" data-filter="code">Code</span></li>
+				<li><span class="filter" data-filter="art">Art</span></li>
+				<li><span class="filter" data-filter="film">Film</span></li>
+			</ul>
 		</div>
-		<ul class="grid cs-style-3 ff-items">
-			<li class = "ff-item-type-4">
-				<figure class="effect-bubba">
-					<img src="images/portfolio/losemyself-portfolio.png" alt="Lose Myself"/>
-						<figcaption>
-							<div>
-								<h2>Lose Myself</h2>
-								<p>music video // assistant director</p>
-								<button type="button" data-toggle="modal" data-target="#modal-losemyself">Watch</button>
-							</div>
-						</figcaption>			
-				</figure>
-			</li>
-			<li class = "ff-item-type-1">
-				<figure class="effect-bubba">
-					<img src="images/portfolio/zeroindexlabs-portfolio.png" alt="Zero Index Labs"/>
-						<figcaption>
-							<div>
-								<h2>Zero Index Labs</h2>
-								<p>logo design // photoshop</p>
-								<button type="button" data-toggle="modal" data-target="#modal-zeroindexlabs">View</button>
-							</div>
-						</figcaption>			
-				</figure>
-			</li>
-			<li class = "ff-item-type-1">
-				<figure class="effect-bubba">
-					<img src="images/portfolio/anchormen-portfolio.png" alt="Anchormen Brewery"/>
-						<figcaption>
-							<div>
-								<h2>Anchormen Brewery</h2>
-								<p>logo concept // photoshop / illustrator</p>
-								<button type="button" data-toggle="modal" data-target="#modal-anchormen">View</button>
-							</div>
-						</figcaption>			
-				</figure>
-			</li>
-			<li class = "ff-item-type-3">
-				<figure class="effect-bubba">
-					<img src="images/portfolio/city-lights-portfolio.png" alt="City Lights"/>
-						<figcaption>
-							<div>
-								<h2>City Lights</h2>
-								<p>painting // felt tip marker + paint</p>
-								<button type="button" data-toggle="modal" data-target="#modal-citylights">View</button>
-							</div>
-						</figcaption>			
-				</figure>
-			</li>
-			<li class = "ff-item-type-4">
-				<figure class="effect-bubba">
-					<img src="images/portfolio/redforblue-portfolio.png" alt="A Red For A Blue"/>
-						<figcaption>
-							<div>
-								<h2>A Red For A Blue</h2>
-								<p>short film // assistant director</p>
-								<button type="button" data-toggle="modal" data-target="#modal-redforblue">Watch</button>
-							</div>
-						</figcaption>			
-				</figure>
-			</li>
-			<li class = "ff-item-type-1">
-				<figure class="effect-bubba">
-					<img src="images/portfolio/quant-portfolio.png" alt="Quant"/>
-						<figcaption>
-							<div>
-								<h2>Quant</h2>
-								<p>logo design // photoshop</p>
-								<button type="button" data-toggle="modal" data-target="#modal-quant">View</button>
-							</div>
-						</figcaption>			
-				</figure>
-			</li>
-			<li class = "ff-item-type-1">
-				<figure class="effect-bubba">
-					<img src="images/portfolio/jaycorp-portfolio.png" alt="JayCorp"/>
-						<figcaption>
-							<div>
-								<h2>JayCorp</h2>
-								<p>book creation + cover design</p>
-								<button type="button" data-toggle="modal" data-target="#modal-jaycorp">View</button>
-							</div>
-						</figcaption>			
-				</figure>
-			</li>
-		</ul>
-	<!-- Modals! -->
-			<div id="modal-losemyself" class="modal fade" role = "document">
-				<div class="modal-dialog">
-				    <!-- Modal content-->
-				    <button type="button" class="close" data-dismiss="modal">&times;</button>
-				      <div class="modal-body">
-						<iframe width="100%" height="300px" src="https://www.youtube.com/embed/oiOpAWuA55w" frameborder="0" allowfullscreen></iframe>
-				      </div>
-				    </div>
-				</div>
-			</div>
-
-			<div id="modal-redforblue" class="modal fade" role = "document">
-				<div class="modal-dialog">
-				    <!-- Modal content-->
-				    <button type="button" class="close" data-dismiss="modal">&times;</button>
-				      <div class="modal-body">
-						<iframe src="https://player.vimeo.com/video/93890414" width="100%" height="300px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				      </div>
-				    </div>
-				</div>
-			</div>
-
-			<div id="modal-zeroindexlabs" class="modal fade" role = "document">
-				<div class="modal-dialog">
-				    <!-- Modal content-->
-				    <button type="button" class="close" data-dismiss="modal">&times;</button>
-				      <div class="modal-body">
-						<img src="images/portfolio/zeroindexlabs-portfolio.png">
-				      </div>
-				    </div>
-				</div>
-			</div>
-
-			<div id="modal-anchormen" class="modal fade" role = "document">
-				<div class="modal-dialog">
-				    <!-- Modal content-->
-				    <button type="button" class="close" data-dismiss="modal">&times;</button>
-				      <div class="modal-body">
-						<img src="images/portfolio/anchormen-portfolio.png">
-				      </div>
-				    </div>
-				</div>
-			</div>
-
-			<div id="modal-citylights" class="modal fade" role = "document">
-				<div class="modal-dialog">
-				    <!-- Modal content-->
-				    <button type="button" class="close" data-dismiss="modal">&times;</button>
-				      <div class="modal-body">
-						<img src="images/display/city-lights-display.png">
-				      </div>
-				    </div>
-				</div>
-			</div>
-
-			<div id="modal-jaycorp" class="modal fade" role = "document">
-				<div class="modal-dialog">
-				    <!-- Modal content-->
-				    <button type="button" class="close" data-dismiss="modal">&times;</button>
-				      <div class="modal-body">
-						<!--start-->
-							<div id='ninja-slider'>
-								<div>
-									<div class="slider-inner">
-										<ul>
-											<li><a class="ns-img" href="images/display/jaycorp/jaycorp-cover.png"></a></li>
-											<li><a class="ns-img" href="images/display/jaycorp/jaycorp-intro.png"></a></li>
-											<li><a class="ns-img" href="images/display/jaycorp/jaycorp-toc.png"></a></li>
-											<li><a class="ns-img" href="images/display/jaycorp/jaycorp-snippet.png"></a></li>
-											<li><a class="ns-img" href="images/display/jaycorp/jaycorp-divider.png"></a></li>
-										</ul>
-<!-- 										<div class="fs-icon" title="Expand/Close"></div> -->
+			<div id="portfoliolist">				
+				<div class="portfolio film">
+					<div class="portfolio-wrapper grid">				
+						<figure class="effect-bubba">
+							<img src="images/portfolio/losemyself-portfolio.png" alt="Lose Myself"/>
+								<figcaption>
+									<div>
+										<h2>Lose Myself</h2>
+										<p>music video // assistant director</p>
+										<button type="button" data-toggle="modal" data-target="#modal-losemyself">Watch</button>
 									</div>
-									<div id="thumbnail-slider">
-										<div class="inner">
+								</figcaption>			
+						</figure>
+					</div>
+				</div>	
+
+				<div class="portfolio design">
+					<div class="portfolio-wrapper grid">				
+						<figure class="effect-bubba">
+							<img src="images/portfolio/zeroindexlabs-portfolio.png" alt="Zero Index Labs"/>
+								<figcaption>
+									<div>
+										<h2>Zero Index Labs</h2>
+										<p>logo design // photoshop</p>
+										<button type="button" data-toggle="modal" data-target="#modal-zeroindexlabs">View</button>
+									</div>
+								</figcaption>			
+						</figure>
+					</div>
+				</div>	
+
+				<div class="portfolio design">
+					<div class="portfolio-wrapper grid">				
+						<figure class="effect-bubba">
+							<img src="images/portfolio/anchormen-portfolio.png" alt="Anchormen Brewery"/>
+								<figcaption>
+									<div>
+										<h2>Anchormen Brewery</h2>
+										<p>logo concept // photoshop / illustrator</p>
+										<button type="button" data-toggle="modal" data-target="#modal-anchormen">View</button>
+									</div>
+								</figcaption>			
+						</figure>
+					</div>
+				</div>	
+
+				<div class="portfolio art">
+					<div class="portfolio-wrapper grid">				
+						<figure class="effect-bubba">
+							<img src="images/portfolio/city-lights-portfolio.png" alt="City Lights"/>
+								<figcaption>
+									<div>
+										<h2>City Lights</h2>
+										<p>painting // felt tip marker + paint</p>
+										<button type="button" data-toggle="modal" data-target="#modal-citylights">View</button>
+									</div>
+								</figcaption>			
+						</figure>
+					</div>
+				</div>	
+
+				<div class="portfolio film">
+					<div class="portfolio-wrapper grid">				
+						<figure class="effect-bubba">
+							<img src="images/portfolio/redforblue-portfolio.png" alt="A Red For A Blue"/>
+								<figcaption>
+									<div>
+										<h2>A Red For A Blue</h2>
+										<p>short film // assistant director</p>
+										<button type="button" data-toggle="modal" data-target="#modal-redforblue">Watch</button>
+									</div>
+								</figcaption>			
+						</figure>
+					</div>
+				</div>	
+
+				<div class="portfolio design">
+					<div class="portfolio-wrapper grid">				
+						<figure class="effect-bubba">
+							<img src="images/portfolio/quant-portfolio.png" alt="Quant"/>
+								<figcaption>
+									<div>
+										<h2>Quant</h2>
+										<p>logo design // photoshop</p>
+										<button type="button" data-toggle="modal" data-target="#modal-quant">View</button>
+									</div>
+								</figcaption>			
+						</figure>
+					</div>
+				</div>	
+
+				<div class="portfolio design">
+					<div class="portfolio-wrapper grid">				
+						<figure class="effect-bubba">
+							<img src="images/portfolio/jaycorp-portfolio.png" alt="JayCorp"/>
+								<figcaption>
+									<div>
+										<h2>JayCorp</h2>
+										<p>book creation + cover design</p>
+										<button type="button" data-toggle="modal" data-target="#modal-jaycorp">View</button>
+									</div>
+								</figcaption>			
+						</figure>
+					</div>
+				</div>	
+		<!-- Modals! -->
+				<div id="modal-losemyself" class="modal fade" role = "document">
+					<div class="modal-dialog">
+					    <!-- Modal content-->
+					    <button type="button" class="close" data-dismiss="modal">&times;</button>
+					      <div class="modal-body">
+							<iframe width="100%" height="300px" src="https://www.youtube.com/embed/oiOpAWuA55w" frameborder="0" allowfullscreen></iframe>
+					      </div>
+					    </div>
+					</div>
+				</div>
+
+				<div id="modal-redforblue" class="modal fade" role = "document">
+					<div class="modal-dialog">
+					    <!-- Modal content-->
+					    <button type="button" class="close" data-dismiss="modal">&times;</button>
+					      <div class="modal-body">
+							<iframe src="https://player.vimeo.com/video/93890414" width="100%" height="300px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					      </div>
+					    </div>
+					</div>
+				</div>
+
+				<div id="modal-zeroindexlabs" class="modal fade" role = "document">
+					<div class="modal-dialog">
+					    <!-- Modal content-->
+					    <button type="button" class="close" data-dismiss="modal">&times;</button>
+					      <div class="modal-body">
+							<img src="images/portfolio/zeroindexlabs-portfolio.png">
+					      </div>
+					    </div>
+					</div>
+				</div>
+
+				<div id="modal-anchormen" class="modal fade" role = "document">
+					<div class="modal-dialog">
+					    <!-- Modal content-->
+					    <button type="button" class="close" data-dismiss="modal">&times;</button>
+					      <div class="modal-body">
+							<img src="images/portfolio/anchormen-portfolio.png">
+					      </div>
+					    </div>
+					</div>
+				</div>
+
+				<div id="modal-citylights" class="modal fade" role = "document">
+					<div class="modal-dialog">
+					    <!-- Modal content-->
+					    <button type="button" class="close" data-dismiss="modal">&times;</button>
+					      <div class="modal-body">
+							<img src="images/display/city-lights-display.png">
+					      </div>
+					    </div>
+					</div>
+				</div>
+
+				<div id="modal-jaycorp" class="modal fade" role = "document">
+					<div class="modal-dialog">
+					    <!-- Modal content-->
+					    <button type="button" class="close" data-dismiss="modal">&times;</button>
+					      <div class="modal-body">
+							<!--start-->
+								<div id='ninja-slider'>
+									<div>
+										<div class="slider-inner">
 											<ul>
-												<li>
-													<a class="thumb" href="images/display/jaycorp/jaycorp-cover.png"></a>
-												</li>
-												<li>
-													<a class="thumb" href="images/display/jaycorp/jaycorp-intro.png"></a>
-												</li>
-												<li>
-													<a class="thumb" href="images/display/jaycorp/jaycorp-toc.png"></a>
-												</li>
-												<li>
-													<a class="thumb" href="images/display/jaycorp/jaycorp-snippet.png"></a>
-												</li>
-												<li>
-													<a class="thumb" href="images/display/jaycorp/jaycorp-divider.png"></a>
-												</li>
+												<li><a class="ns-img" href="images/display/jaycorp/jaycorp-cover.png"></a></li>
+												<li><a class="ns-img" href="images/display/jaycorp/jaycorp-intro.png"></a></li>
+												<li><a class="ns-img" href="images/display/jaycorp/jaycorp-toc.png"></a></li>
+												<li><a class="ns-img" href="images/display/jaycorp/jaycorp-snippet.png"></a></li>
+												<li><a class="ns-img" href="images/display/jaycorp/jaycorp-divider.png"></a></li>
 											</ul>
+	<!-- 										<div class="fs-icon" title="Expand/Close"></div> -->
+										</div>
+										<div id="thumbnail-slider">
+											<div class="inner">
+												<ul>
+													<li>
+														<a class="thumb" href="images/display/jaycorp/jaycorp-cover.png"></a>
+													</li>
+													<li>
+														<a class="thumb" href="images/display/jaycorp/jaycorp-intro.png"></a>
+													</li>
+													<li>
+														<a class="thumb" href="images/display/jaycorp/jaycorp-toc.png"></a>
+													</li>
+													<li>
+														<a class="thumb" href="images/display/jaycorp/jaycorp-snippet.png"></a>
+													</li>
+													<li>
+														<a class="thumb" href="images/display/jaycorp/jaycorp-divider.png"></a>
+													</li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						<!--end-->
-				    </div>
+							<!--end-->
+					    </div>
+					</div>
 				</div>
 			</div>
+		</div>
 	</div>
 	</section>
 	<!-- Custom JS -->
@@ -278,5 +289,31 @@
 	<script src="js/thumbnail-slider.js" type="text/javascript"></script>
 	<script src="js/ninja-slider.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade']
+				});				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
 </body>
 </html>

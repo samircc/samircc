@@ -4,6 +4,7 @@
 	overflow: hidden;
 	margin: 10px 3%;
 	background: #3085a3;
+	min-width:320px;
 	text-align: center;
 	cursor: pointer;
 }
@@ -11,6 +12,7 @@
 .grid figure img {
 	position: relative;
 	display: block;
+	width:100%;
 	opacity: 0.8;
 }
 
@@ -62,7 +64,6 @@
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 .grid figure figcaption > a {
-	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
 	font-size: 0;
