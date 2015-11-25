@@ -1,5 +1,6 @@
 .ff-container{
-	width: 100%;
+	background: #ffffff;
+	overflow:hidden;
 	margin: 0 auto;
 	text-align: center;
 	position:relative;
@@ -8,14 +9,7 @@
 .portfolio-nav
 {
 	position: relative;
-	z-index:150;
 	height:50px;
-}
-
-.portfolio-nav-scrolled {
-    position: fixed;
-    width:100%;
-    top:0;
 }
 
 .ff-container label{
@@ -72,12 +66,9 @@
 
 .ff-items li img{
 	display: block;
-	width: 100%;
 }
 
-
 .ff-items li{
-	margin: 0px;
 	width: 25%; /* Fallback */
 	width: -webkit-calc(100% / 4);
 	width: calc(100% / 4);
@@ -145,7 +136,7 @@
 	}
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1280px) {
 	.ff-items li {
 		width: 50%; /* Fallback */
 		width: -webkit-calc(100% / 2);
